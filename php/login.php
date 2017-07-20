@@ -3,43 +3,29 @@
 <!doctype html>
 <html>
 <head>
-	
-	<title>Document</title>
-        
-    <meta charset="utf-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <meta name="description" content="">
- <meta name="author" content="">
- <link rel="stylesheet" href="css/bootstrap.min.css">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- <script src="js/jquery.min.js"></script>
- <script src="js/bootstrap.min.js"></script>
-	
+	<meta charset="utf-8">
+	<title>Vowlie</title>
+	<link href="https://fonts.googleapis.com/css?family=Lemonada|Muli" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 	<style>
 		*{
-			font-family: sans-serif;
+			font-family: Muli, sans-serif;
+            text-align: center;
 		}
+        h2 {
+            font-family: Lemonada, cursive;
+        }
+        
 	</style>
 </head>
 <body>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
 <!-- php inject our Navigation using the require method -->
 <?php require_once "nav.php"; ?>
 
 <!-- Continue HTML -->
-<h2>Login</h2>
+<h2>Vowlie</h2>
 <form method="post" action="login.php">
-<label>E-mail
+<label>E-mail1
 	<input type="email" name="email"  value="" required><br>
 </label>
 	<br>
@@ -61,9 +47,9 @@ if(isset($_POST['submit'])){
 		$p = $_POST['pw'];
 
 		//mamp users connection
-		$cnt = mysqli_connect("localhost", "root", "root", "DBNAME");
+		//$cnt = mysqli_connect("localhost", "root", "root", "DBNAME");
 		//xampp users connection
-		//$connection = mysqli_connect("localhost", "root", "", "DBNAME");
+		$connection = mysqli_connect("localhost", "root", "", "DBNAME");
 
 		$qry = "select * from TBNAME where pw='$p' AND email='$e'";
 
@@ -89,7 +75,7 @@ if(isset($_POST['submit'])){
 			echo "try again";
 		}
 		// Closing Connection
-		mysqli_close($cnt);
+		mysqli_close($connection);
 	}
 
 }

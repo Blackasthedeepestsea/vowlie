@@ -4,7 +4,8 @@
 <head>
 	<meta charset="utf-8">
 	<title>Vowlie</title>
-	<link rel="stylesheet" href="style.css">
+	<meta http-equiv="Cache-Control" content="no-store" />
+    <link rel="stylesheet" href="style.css">
 	<style>
 		*{
 			font-family: Muli, sans-serif;

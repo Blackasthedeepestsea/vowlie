@@ -1,8 +1,16 @@
-*{
-	font-family: sans-serif;
-}
+  * {
+            font-family: Muli, sans-serif;
+            text-align: center;
+            background: black;
+            color: mediumpurple;
+        }
+        
+h2 { 
+            font-family: Lemonada, cursive;
+            color: rebeccapurple;
+        }
 .error{
-	color:#f00;
+	color:orange;
 }
 
 nav{

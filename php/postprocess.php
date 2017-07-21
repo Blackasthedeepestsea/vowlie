@@ -30,6 +30,9 @@ if(isset($_POST['email'])) {
 	$n = $_POST['name'];
 	$e = $_POST['email'];
 	$p = $_POST['pw'];
+    $v1 = $_POST['value'];
+    $v2 = $_POST['value2'];
+    $v3 = $_POST['value3'];
 //Similarly take data from the USER field and assign to 2 variables: $u will be used for the rest of this script
 // $_SESSION is a super global that can be called and edited from Page to page since we started with a session on line 3
 	$u = $_SESSION['user'] = $_POST['user'];
@@ -113,7 +116,7 @@ if(isset($_POST['email'])) {
 //mamp users connection
 	//	$cnt = mysqli_connect("localhost", "root", "root", "DBNAME");
 //xampp users connection
-		$connection = mysqli_connect("localhost", "root", "", "DBNAME");
+		$connection = mysqli_connect("localhost", "root", "", "fssa");
 
 		$qry = "INSERT INTO TBNAME (name, email, pw) VALUES ('$n', '$e','$p');";
 

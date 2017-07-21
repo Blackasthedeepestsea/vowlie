@@ -5,6 +5,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Vowlie</title>
+    <meta http-equiv="Cache-Control" content="no-store" />
 	<link href="https://fonts.googleapis.com/css?family=Lemonada|Muli" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 	<style>
